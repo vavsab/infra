@@ -14,6 +14,6 @@ jobs:
               uses: pozil/auto-assign-issue@v1
               with:
                 repo-token: ${{ secrets.GITHUB_TOKEN }}
-                assignees: vavsab
-                numOfAssignee: 5
+                assignees: ivan-sabelnikov
+                numOfAssignee: 1
                 allowSelfAssign: false
