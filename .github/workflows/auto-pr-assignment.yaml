@@ -1,8 +1,7 @@
 name: PR assignment
 
 on:
-    pull_request:
-        types: [opened]
+    workflow_dispatch:
 
 jobs:
     auto-assign:
@@ -14,6 +13,6 @@ jobs:
               uses: pozil/auto-assign-issue@v1
               with:
                 repo-token: ${{ secrets.GITHUB_TOKEN }}
-                assignees: ringods, simenandre, dirien, usrbinkat, rebelopsio
+                assignees: vavsab
                 numOfAssignee: 5
                 allowSelfAssign: false
